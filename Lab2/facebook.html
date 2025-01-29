@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title> Facebook </title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            margin: 10;
+            background-color: #f0f2f5;
+            font-family: Arial, sans-serif;
+        }
+
+        .login-container {
+	    position: absolute;
+	    top: 200px;
+	    left: 850px;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+	    margin: 0px 0px 0px 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 300px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 11px;
+            margin: 8px 0px 0px -10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px 0;
+	    margin-top: 11px;
+        }
+
+        button:hover {
+            background-color: #145dbf;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 0px;
+	    margin-left: -2px;
+	    margin-bottom: 5px;
+            color: blue;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+
+        .create-account {
+            width: 100%;
+            padding: 10px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px -7px 0 -10px;
+        }
+
+        .create-account:hover {
+            background-color: darkgreen;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 style="color: blue; position: absolute; top: 10px; left: 530px; font-size: 40px" > Made by Aibek </h1>
+    <h1 style="color: blue; position: absolute; top: 220px; left: 280px; font-size: 40px" > Facebook </h1>
+    <p style="position: absolute; top: 280px; left: 270px; font-size: 19px"> Facebook помогает вам всегда <br>
+	    оставаться на связи и общаться со <br>
+	    своими знакомыми. 
+	</p>
+
+    <div class="login-container">
+        <input type="text" placeholder="Электронная почта или номер телефона">
+        <input type="password" placeholder="Пароль">
+        <button>Войти</button>
+        <a href="#" class="forgot-password">Забыли пароль?</a>
+        <button class="create-account">Создать аккаунт</button>
+    </div>
+
+    <p style="position: absolute; top: 450px; left: 840px; font-size: 14px">
+        <span style="font-weight: bold;">Создать Страницу</span> знаменитости, музыкальной группы <br>
+        или компании.
+    </p>
+</body>
+</html>
