@@ -1,0 +1,13 @@
+<div class="card album-detail" *ngIf="album">
+  <h2>Album Details</h2>
+  <p>ID: {{ album.id }}</p>
+  <p>User ID: {{ album.userId }}</p>
+
+  <div class="form-group">
+    <label style = 'margin: 20px'>Title:</label>
+    <input type="text" [(ngModel)]="newTitle" placeholder="Album title">
+  </div>
+  <button class="btn btn-primary" (click)="saveTitle()">Save </button>
+  <a class="btn btn-primary" [routerLink]="['/albums', album.id, 'photos']">Photos</a>
+  <button class="btn" routerLink="/albums">Back to Albums</button>
+</div>
